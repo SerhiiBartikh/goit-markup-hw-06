@@ -235,9 +235,9 @@ img {
 }
 
 /* ------------section-------------- */
-.section-first-container {
-  /* padding-top: 120px; */
-}
+/* .section-first-container {
+  padding-top: 120px;
+} */
 
 .section-first {
   background-color: var(--secondary-text-color);
@@ -924,12 +924,22 @@ img {
 .foter-form-input {
   background: var(--title-text-color);
   border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  
+  
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   margin-right: 24px;
   padding: 8px 16px;
+  
   color: var(--white-text-color);
 }
+
+.foter-form-input:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+}
+
 .foter-form-input::placeholder {
   color: var(--white-text-color);
   font-weight: 400;
