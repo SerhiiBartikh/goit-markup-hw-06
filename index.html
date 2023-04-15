@@ -369,47 +369,65 @@
                  & growth solutions.</p>
            </div>
            <div class="foter-icon-wrapper">
-                <p class="fotter-icons-title">
+                <p class="foter-icons-title">
                     Social media
                 </p>
-                <ul class="fotter-icons-list list">
+                <ul class="foter-icons-list list">
                     
-                        <li class="fotter-icons-item">
-                            <a class="fotter-icons-link"  href="">
-                                <svg class="fotter-icons">
+                        <li class="foter-icons-item">
+                            <a class="foter-icons-link"  href="">
+                                <svg class="foter-icons">
                                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                    
                     
-                        <li class="fotter-icons-item">
-                            <a class="fotter-icons-link" href="">
-                                <svg class="fotter-icons">
+                        <li class="foter-icons-item">
+                            <a class="foter-icons-link" href="">
+                                <svg class="foter-icons">
                                     <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
                         </li>
                    
                    
-                        <li class="fotter-icons-item">
-                            <a class="fotter-icons-link" href="">
-                                <svg class="fotter-icons"">
+                        <li class="foter-icons-item">
+                            <a class="foter-icons-link" href="">
+                                <svg class="foter-icons">
                                     <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
                         </li>
                    
                     
-                        <li class="fotter-icons-item">
-                            <a class="fotter-icons-link" href="">
-                                <svg class="fotter-icons"">
+                        <li class="foter-icons-item">
+                            <a class="foter-icons-link" href="">
+                                <svg class="foter-icons">
                                     <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                                 </svg>
                             </a>
                         </li>
                     
                 </ul>
+           </div>
+
+           <div >
+                <p class="foter-form-text">Subscribe</p>
+                <form class="foter-form" >
+                    <label for="foter-form-mail"></label>
+                    <input  class="foter-form-input" id="foter-form-mail" type="email"  name="user-mail" placeholder="E-mail" required>
+
+                    <button class="foter-form-button" type="submit">Subscribe
+                        <svg class="foter-button-icon">
+                            <use href="./images/symbol-defs.svg#icon-fly-icon"></use>
+                        </svg>
+                    </button>
+                   
+
+
+                </form>
+
            </div>
         </div>
         
@@ -420,11 +438,48 @@
         <div class="modal">
             <button class="close-button" type="button" data-modal-close>
                 <svg class="close-button-icon" width="8" height="8" >
-                    <use href="/images/symbol-defs.svg#icon-close-black" >
-                        
-                    </use>
+                    <use href="/images/symbol-defs.svg#icon-close-black" ></use>
                 </svg>
             </button>
+
+            <p class="modal-form-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form" >
+                <label class="modal-form-label" for="user-name">Name</label>
+
+                <div class="modal-form-icon-wrapper">
+                    <input class="modal-input" id="user-name" type="text"  name="uesr_name" required  pattern="^[a-zA-Zа-яА-Я]+" minlength="2">
+                    <svg class="modal-input-icons">
+                        <use href="./images/symbol-defs.svg#icon-user-icon"></use>
+                    </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-phone">Name</label>
+
+                <div class="modal-form-icon-wrapper">
+                    <input class="modal-input" id="user-phone" type="tel"  name="user_phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                    <svg class="modal-input-icons">
+                        <use href="./images/symbol-defs.svg#icon-phone-icon"></use>
+                    </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-mail">Name</label>
+
+                <div class="modal-form-icon-wrapper">
+                    <input class="modal-input" id="user-mail" type="email"  name="user_mail" required>
+                    <svg class="modal-input-icons">
+                        <use href="./images/symbol-defs.svg#icon-email-icon"></use>
+                    </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-comment">Comment</label>
+                <textarea class="modal-user-text" name="Comment" id="user-comment" placeholder="Text input"></textarea>
+
+                <input class="modal-checkbox-input visual-hidden" id="modal-checkbox" type="checkbox"  name="checkbox">
+                <label class="modal-checkbox-label" for="modal-checkbox">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+
+                <button class="form-button" type="submit">Send</button>
+
+            </form>
         </div>
     </div>
 
